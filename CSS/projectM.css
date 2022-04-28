@@ -1,0 +1,97 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.bg-container{
+    /* background-color: blue; */
+    height: 100%;
+}
+.pageview{
+    margin-top: 5%;
+}
+.signin-container{
+    /* background-color: aqua; */
+    /* width: 30%;  */
+    text-align: center;
+    padding: 5px;
+}
+.projectName-container{
+    background-color: rgb(63, 81, 181);
+    width: 100%;
+}
+.projectName-group{
+    align-items: center;
+}
+.projectName-logo{
+    border-radius: 50px;
+}
+.projectName-heading{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 20px;
+    padding-left: 4px;
+    margin-bottom: 0px;
+}
+.signwith-group{
+    align-items: center;
+    background-color: rgb(63, 81, 181); 
+    padding: 0px 15px 0px 15px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.signwith-logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 50px;
+    /* background: blue; */
+}
+.signwith-heading{
+    color: #ffffff;
+    font-family: "Roboto";
+    font-size: 18px;
+    padding-left: 4px;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+.logintext{
+    font-family: "Roboto";
+    font-size: 18px;
+}
+.emaildata{
+    border: 2px solid #d3d3d3;
+    border-radius: 5px;
+    outline-style: none;
+}
+.passworddata{
+    position: relative;   
+}
+.btn-signin{
+    background-color: rgb(63, 81, 181);
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+}
+.error-email{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: red;
+    text-align: left;
+}
+.error_details{
+    font-family: "Roboto";
+    font-size: 18px;
+    color: red;
+    text-align: center;
+}
+.eye-font{
+    /* float: right; */
+    position: absolute;
+    right: 3%;
+    top: 20px;
+    align-items: center;
+    /* top: 5%; */
+    font-size: 18px;
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectM</title>
+    <link rel="stylesheet" href="/CSS/projectM.css">
+    <script src="/JS/projectM.js"></script>
+    <script src="/JS/projectM-login-regex.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/b5305a0eaf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="bg-container">
+      <div class="pageview">
+        <div class="signin-container m-auto col-12 col-sm-12 col-md-6 col-lg-4" >
+            <div class="projectName-container mt-3 mb-3">
+                <div class="projectName-group d-flex flex-row justify-content-center pt-2 pb-2">
+                    <img src="/images/projectm.png" class="projectName-logo">
+                    <h3 class="projectName-heading">Project-m</h3>
+                </div>
+            </div>
+            <h4 class="login-heading mb-3">Login to your account</h4> 
+            <a href="#">    
+                <button class="btn signwith-group m-auto d-flex flex-row justify-content-center pt-2 pb-2">
+                    <img src="/images/google.png" class="signwith-logo">
+                    <h4 class="signwith-heading ml-2">SIGN IN WITH GOOGLE</h4>
+                </button>
+            </a>
+            <p class="logintext mt-3">Or login with your Credentials</p>
+            <input type="text" class="emaildata p-2 w-100" id="email_text" placeholder="Email">
+            <p class="error-email" id="email_error"></p>
+            <div class="passworddata">
+                <input type="password" class="emaildata p-2 w-100 mt-2" id="password_text" placeholder="Password">
+                <i class="fa fa-eye-slash eye-font" id="image_change" onmousedown="view_password()" onmouseup="hide_password()"></i>
+                <!-- <i class="fa fa-eye eye-font" id="open_eye"></i> -->
+                <p class="error-email" id="password_error"></p>
+            </div>
+            <p class="error_details" id="error_details"></p>
+            <button class=" btn btn-signin mb-3 pt-3 pb-3 mt-2" style="font-size: 20px" type="button" onclick="verify_details()">SIGN IN</button>
+        </div>
+      </div>  
+    </div>
+</body>
+</html>

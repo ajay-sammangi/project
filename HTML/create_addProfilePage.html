@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/profilepage.css">
+    <link rel="stylesheet" href="/CSS/create_addProfilePage.css">
+    <script src="/JS/create_addProfilePage.js"></script>
+    <script src="/JS/add_profileRowAction.js"></script>
+    <script src="/JS/profilepage.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="/fontawesome/all.css">
+    <script src="https://kit.fontawesome.com/b5305a0eaf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script src="https://cdn.ckeditor.com/4.18.0/standard-all/ckeditor.js"></script>
+
+    <!-- <script src="https://cdn.ckeditor.com/4.18.0/standard-all/ckeditor.js"></script> -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://mozilla.github.io/pdf.js/build/pdf.js"></script>
+</head>
+<body>
+    <!-- <h1>welcome</h1> -->
+    <div class="wrapper d-flex flex-row">
+        
+        <div class="sidemenu-wrapper">
+        <div class="sidemenu">  
+        <div class="sidemenu-heading d-flex flex-row justify-content-between p-2">
+            <div class="sidemenu-heading-left d-flex flex-row justify-content-center p-2">
+                <!-- <div class="sidemenu-image-box">  -->
+                    <img src="/images/projectm.png" class="rounded-circle sidemenu-heading-image"/>
+                <!-- </div> -->
+                <h3 class="sidemenu-heading-text ml-2 mb-0">Project M</h1>
+            </div>
+            <div class="sidemenu-heading-right p-2 d-flex flex-row align-items-center">
+                <i class="fa fa-angle-left" style="font-size: 25px;color: #ffffff;"></i>
+            </div>
+        </div>
+        <div class="sidemenu-account d-flex flex-row justify-content-center p-3">
+            <div class="account-group d-flex flex-column align-items-center">
+                <div class="sidemenu-name-box rounded-circle d-flex flex-row justify-content-center mb-2">
+                    <span class="account-nameletter pt-2">K</span>
+                </div>
+                <div class="row"> 
+                    <h5 class="mb-2">Kiran</h5>  
+                </div>
+                <div  class="row" style="text-align: center;">
+                    <p class="mb-0">HR Manager</p>
+                </div>    
+            </div>
+        </div>
+        <h6 class="p-3">NAVIGATION MENU</h6> 
+        <div class="navigation items ml-2">
+            <ul class="navigation-text" style="list-style: none;">
+                <a href="#"><li class="p-2"><i class="fa fa-briefcase mr-3"></i>Jobs</li></a>
+                <a href="/HTML/profilepage.html"><li class="p-2"><i class="fa fa-address-card mr-3"></i>Profiles</li></a>
+                <a href="#"><li class="p-2"><i class="fa fa-search mr-3"></i>Search</li></a>
+                <a href="#">
+                    <li class="p-2 d-flex flex-row align-items-center"><i class="fas fa-arrow-down mr-3"></i>Reports
+                        <i class="fa fa-arrow-down reports-dropdown" style="margin-left: 90px;"></i>
+                    </li>
+                </a>
+                <a href="#"><li class="p-2"><i class="fa fa-question mr-3"></i>Interviews</li></a>
+            </ul>
+        </div>
+        </div>  
+        </div>
+        <div class="page-content" id="create_profileSection">
+            <div class="horizontal-menu d-flex flex-row justify-content-end align-self-center p-3">
+                <div class="signout-action d-flex flex-column justify-content-center"> 
+                    <!-- <i class="fa fa-arrow-from-bracket signout" onclick="signout()"></i>   -->
+                    <i class="fa fa-right-from-bracket" style="font-size: 40px;color: #ffffff;" onclick="signout()"></i>
+                </div>
+            </div>
+            <div class="group">
+                <div class="add_profilesection_heading d-flex flex-column m-0">
+                    <div class="row ml-0 mr-0">    
+                        <div class="add_profileLeftSection d-flex flex-row pt-2 pb-2">
+                            <div class="d-flex flex-column justify-content-center ml-4">
+                                <img src="/images/jobicon.svg" class="add_image p-1" style="border: 1px solid black;border-radius: 10px"/>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center ml-1 pt-1">
+                                <h1 style="color:#5484ca;font-size: 25px;margin: 0px;">Profiles</h1> 
+                                <div class="d-flex flex-row align-items-center">
+                                    <a href="/HTML/profilepage.html" style="color: #3f50b5;margin: 0px;text-decoration: none;">Profile List |</a>
+                                    <p style="color: #3f50b5;margin: 0px;font-weight: 500;text-decoration: none;" class="pl-2">Add Profile</p>
+                                </div>
+                            </div> 
+                        </div>
+                    </div> 
+                </div>
+                <div class="row ml-0 mr-0">
+                    <div class="add_profileCard p-4">
+                        <div class="card col-12 pl-0 pr-0">
+                                <div class="card-header card_theme d-flex flex-row justify-content-between align-items-center">
+                                    <div>
+                                        <p class="mb-0" style="font-size:24px;font-weight:400;color: #305697;" >Add Profile</p>
+                                    </div>
+                                <div class="d-flex flex-row">  
+                                    <input type="file" id="myPdf" style="border: #305697;"/><br>
+                                    
+                                    <!-- <input type="file" class="add_profilebutton" id="preview">
+                                    <!-- <input id="f02" type="file" placeholder="Add profile picture" /> -->
+                                    <label for="myPdf" onchange="display()">UPLOAD RESUME</label> 
+                                </div>
+                                </div>
+                                <div class="header-body d-flex flex-row p-3">
+                                    <div class="add_profileLeft">
+                                        <input type="text" placeholder="Name" id="Name" class="input_box"/>
+                                        <input type="text" placeholder="Email" id="Email" class="input_box"/>
+                                        <input type="text" placeholder="Phone" id="Phone" maxlength="10" class="input_box"/>
+                                        <input type="text" placeholder="Alternate Phone" id="Alternate_Phone" maxlength="10" class="input_box"/>
+                                        <input type="text" placeholder="Location" id="Location" class="input_box"/>
+                                        <input type="text" placeholder="Current Company" id="Current_Company" class="input_box"/>
+                                        <input type="text" placeholder="Designation" id="Designation" class="input_box"/>
+                                        <input type="number" placeholder="Experience" id="Experience" class="input_box"/>
+                                        <input type="number" placeholder="CCTC" id="CCTC" class="input_box"/>
+                                        <input type="number" placeholder="ECTC" id="ECTC" class="input_box"/>
+                                        <input type="text" placeholder="Notice Period" id="Notice_Period" class="input_box"/>
+
+                                        <textarea name="content" id="content" cols="40" rows="6">
+
+                                        </textarea>
+
+                                        <!-- <textarea cols="80" id="editor1" name="editor1" rows="10">
+
+                                        </textarea> -->
+                                        
+
+                                        <input type="number" placeholder="Passed out year" id="Passed_out_year" class="input_box"/>
+                                        <input type="text" placeholder="College" id="College" class="input_box"/>
+
+                                        <textarea  placeholder="Working Experience" id="Working_Experience" name="text-editor">
+
+                                        </textarea>
+
+                                        <input type="text" placeholder="Key Skills" id="Key Skills" class="input_box"/>
+                                    </div>  
+                                    <div class="add_profileRight d-flex flex-column justify-content-center align-items-center ml-2">
+                                        <!-- <div class="preview_box d-flex flex-row justify-content-center align-items-center"> -->
+                                            <!-- <div><p>Parse Resume</p></div> -->
+                                        <!-- </div>    -->
+                                        <!-- <p>Preview will be loaded after the successful upload</p> -->
+                                    <!-- <div class="preview_container"> -->
+                                        <!-- <embed id="embed_pdf" style="width: 100%;height: 100%;" type="application/pdf"></embed> -->
+                                    <!-- </div>  -->
+                                    <div style="height:100%;width:70%;">
+                                    <canvas id="pdfViewer" style="width:100%;overflow-y: auto;"></canvas>
+                                    </div>
+                                    </div> 
+                                <button type="button" class="add_profilebutton mr-2 pt-2" onclick="save_profile()">SAVE PROFILE</button>
+                                </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>   
+        </div>
+    </div>
+
+<script src="/ckeditor/ckeditor.js"></script>
+<script>CKEDITOR.replace('content',
+{
+    fullPage: true,
+    extraPlugins: 'editorplaceholder',
+    editorplaceholder: 'Education details',
+    
+    // allowedContent: true,
+    // height: 320,
+    removeButtons: 'PasteFromWord',
+    placeholder:'Educational Details',
+  
+})</script>
+<script>CKEDITOR.replace('text-editor',
+{
+    fullPage: true,
+    extraPlugins: 'editorplaceholder',
+    editorplaceholder: 'Work Experience',
+    
+    // allowedContent: true,
+    // height: 320,
+    removeButtons: 'PasteFromWord',
+    placeholder:'Work Experience',
+})</script>
+
+
+</body>
+</html>
