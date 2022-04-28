@@ -1,0 +1,13 @@
+.horizontal-menu{
+    /* height: 72px; */
+    width: 100%;
+    background-color: #3f51b5;
+}
+.signout{
+    font-size: 40px;
+    color: white;
+    /* align-items: center; */
+}
+.signout-action:hover{
+    cursor: pointer;
+}

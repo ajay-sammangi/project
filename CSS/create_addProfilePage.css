@@ -1,0 +1,127 @@
+*{
+    margin: 0px;
+}
+
+.horizontal-menu{
+    /* height: 72px; */
+    width: 100%;
+    background-color: #3f51b5;
+}
+.signout{
+    font-size: 40px;
+    color: white;
+    /* align-items: center; */
+}
+.signout-action:hover{
+    cursor: pointer;
+}
+.group{
+    /* height: 100vh!important; */
+    /* overflow-y: auto; */
+    background-color: #d3d3d3;
+}
+.add_profilesection_heading{
+    background-color: #ffffff;
+    height: 100%;
+    /* width: 100%; */
+    box-shadow: 0px 5px 5px #d3d3d3;
+}
+/* .add_profileLeftSection{ */
+    /* background-color: #d3d3d3; */
+/* } */
+.add_image{
+    height: 50px;
+    width: 50px;
+}
+.add_profilebutton{
+    background-color: #3F51B5;
+    color: #ffffff;
+    border: none;
+    border-radius:5px ;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    outline: none;
+}
+[type=file] {
+    position: absolute;
+    height: 0px;
+    top : 5px;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+input,
+[type=file] , label {
+  border: 1px solid #CCC;
+  border-radius: 3px;
+  text-align: left;
+  padding: 10px;
+  width: 150px;
+  margin: 0;
+  /* top: 25px; */
+  /* right: 20px; */
+  /* position: relative; */
+}
+[type=file] ,label {
+  text-align: center;
+  /* left: 7.35em; */
+  top: 0.5em;
+  /* Decorative */
+  background: #3f51b5;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+[type=file] + label:hover {
+  background: #7183e8;
+}
+/* .add_profilebutton:hover{
+    cursor: pointer;
+    background-color: #7183e8;
+} */
+.card_theme{
+    background-color: #ffffff!important;
+    border-bottom: 2px solid #d3d3d3!important;
+}
+.add_profileCard{
+    width: 100%;
+    height: calc(100vh - 150px);
+    /* background-color: #ffffff; */
+}
+.add_profileLeft{
+    width: 45%;
+    height: 50vh;
+    overflow-y: auto;
+    /* background-color: aqua; */
+}
+.input_box{
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #d3d3d3;
+    outline: none;
+    text-indent: 0px!important;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+}
+.input_box:focus{
+    border-bottom: 2px solid #7183e8;
+}
+/* .input_box:hover{
+    border-bottom: 2px solid #312f2f;
+} */
+.add_profileRight{
+    background-color: #f8f7f6;
+    width: 100%;
+    height: 50vh;
+    overflow-y: auto!important;
+    border: 2px solid #d3d3d3;   
+}
+.preview_box{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border-radius: 15px;
+    padding: 5px;
+    border: 1px solid #000000;
+}
+

@@ -1,0 +1,65 @@
+.ag-header-cell-label{
+    font-size: 15px;
+    /* text-align: center; */
+    /* color: brown; */
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid #d3d3d3; */
+  }
+  .ag-cell-value{
+    text-align: center;  
+    /* padding: 3px; */
+    /* color: blue;  */
+    /* border: 1px solid #d3d3d3; */
+    /* border-collapse: collapse; */
+  }
+  #myGrid{
+    box-sizing: border-box;
+    /* border: 2px solid blue; */
+  }
+  .btn_style:hover{
+    cursor: pointer;
+    background-color:white;
+  }
+  .btn_style{
+    height: 40px;
+    /* width: 30px; */
+    border: none;
+    border-style: none;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* background-color: none; */
+    border-right: 2px solid #d3d3d3;
+  }
+  .box{
+    /* border: 0px solid; */
+    border: none;
+    padding: 4px;
+  }
+  .icon{
+    font-size: 20px;
+    margin: 20px;
+    /* padding: 10px; */
+  }
+  #search_input{
+    border-bottom:2px solid #003151;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    outline: none;
+    text-indent: 15px;
+    }
+  /* #search_input :focus{
+    border-bottom:2px solid #003151;
+    border-right: none;
+    border-left: none;
+    border-top: none;
+    outline: none;
+  } */
+  .rag-element {
+    background-color:#003151;
+    color: #ffffff;
+    padding: 5px 10px 5px 10px;
+    border-radius: 10px;
+  }
